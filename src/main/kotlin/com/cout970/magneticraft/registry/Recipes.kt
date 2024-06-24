@@ -39,7 +39,7 @@ fun registerRecipes() {
     //                                              CRUSHING TABLE RECIPES
     // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     //Plates
-    if (OreDictionary.getOres("plateTin", false) != null && OreDictionary.getOres("plateTin", false).isEmpty())
+    if (OreDictionary.getOres("plateTin", false) != null && !OreDictionary.getOres("plateTin", false).isEmpty())
         addCrushingTableRecipe(OreDictionary.getOres("ingotTin", false).get(0), OreDictionary.getOres("plateTin", false).get(0))
     addCrushingTableRecipe(IEContent.itemMetal.stack(1, 0), IEContent.itemMetal.stack(1, 30))
     addCrushingTableRecipe(IEContent.itemMetal.stack(1, 1), IEContent.itemMetal.stack(1, 31))
